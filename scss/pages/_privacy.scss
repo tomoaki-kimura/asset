@@ -1,0 +1,53 @@
+/*==================================================================
+    #privacy .lead
+===================================================================*/
+#privacy .privacy {
+    padding: 130px 0 70px;
+    @include mq() {
+        padding: 50px 0 30px;
+    }
+    p {
+        font-size: 1.4rem;
+        line-height: 1.7;
+        margin-bottom: 1em;
+        @include mq() {
+            font-size: 1.3rem;
+            line-height: 1.75;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    .lead {
+        padding: 0 0 50px;
+        @include mq() {
+            padding: 0 0 40px;
+        }
+    }
+    .blocks {
+        padding: 0 0 50px;
+        @include mq() {
+            padding: 0 0 40px;
+        }
+        &_ttl {
+            font-size: 2.4rem;
+            line-height: 1.3;
+            padding-bottom: 0.8em;
+            margin-bottom: 1.2em;
+            position: relative;
+            @include mq() {
+                font-size: 2.1rem;
+            }
+            &::before {
+                display: block;
+                content: "";
+                width: 40px;
+                height: 1px;
+                background-color: $w;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+/*==================================================================
+    .footer
+===================================================================*/
+.footer {
+    padding: 50px 0;
+    background-color: #000;
+    @include mq() {
+        padding: 20px 0 70px;
+    }
+    &_links {
+        margin-bottom: 15px;
+        @include mq() {
+            margin-bottom: 30px;
+        }
+        ul {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            @include mq() {
+                display: block;
+            }
+            li {
+                margin-right: 1em;
+                padding-right: 1em;
+                border-right: solid 1px rgba($color: $w, $alpha: 0.4);
+                @include mq() {
+                    margin-right: 0;
+                    padding-right: 0;
+                    border-right: none;
+                    border-bottom: solid 1px rgba($color: $w, $alpha: 0.4);
+                }
+                &:last-child {
+                    border-right: none;
+                }
+                a {
+                    display: inline-block;
+                    font-size: 1.4rem;
+                    line-height: 1.6;
+                    color: $w;
+                    letter-spacing: 0.05em;
+                    @include mq() {
+                        display: block;
+                        padding: 1em 20px 1em 0;
+                        background-image: url(../img/common/icon_arrow_02.svg);
+                        background-repeat: no-repeat;
+                        background-position: 100% 50%;
+                        background-size: 8px 9px;
+                    }
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+    &_sns {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: space-between;
+        align-items: center;
+        @include mq() {
+            flex-flow: column nowrap;
+        }
+        small {
+            display: block;
+            font-size: 1.4rem;
+            font-family: $font1;
+            font-weight: 500;
+            line-height: 1.1;
+            color: rgba($color: $w, $alpha: 0.4);
+            @include mq() {
+                font-size: 1.2rem;
+            }
+        }
+        ul {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            @include mq() {
+                margin-bottom: 20px;
+            }
+            li {
+                margin-right: 15px;
+                &:nth-child(1) {
+                    img {
+                        width: 20px;
+                    }
+                }
+                &:nth-child(2) {
+                    img {
+                        width: 16px;
+                    }
+                }
+                &:nth-child(3) {
+                    margin-right: 0;
+                    img {
+                        width: 16px;
+                    }
+                }
+                a {
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+}

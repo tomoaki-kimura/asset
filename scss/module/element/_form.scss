@@ -1,0 +1,92 @@
+/*==================================================================
+    form
+===================================================================*/
+
+/*  autofill
+---------------------------------------------*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px rgb(250, 250, 250) inset;
+}
+
+/*  hover
+---------------------------------------------*/
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    transition: $transition;
+}
+
+.pc input[type="text"]:hover,
+.pc input[type="tel"]:hover,
+.pc input[type="email"]:hover,
+.pc input[type="password"]:hover,
+.pc select:hover,
+.pc textarea:hover {
+    border: 1px solid rgba($color: $w, $alpha: 0.2);
+    background-color: rgba($color: $w, $alpha: 0.1);
+}
+
+/*  focus
+---------------------------------------------*/
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid rgba($color: $w, $alpha: 0.5);
+}
+input[type="button"]:focus,
+input[type="submit"]:focus,
+button[type="submit"]:focus,
+input[type="file"],
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+button:focus {
+    outline: none;
+}
+
+/*  input.short
+---------------------------------------------*/
+input.short,
+select.short,
+textarea.short {
+    width: 40%;
+}
+@include mq() {
+    input.short,
+    select.short,
+    textarea.short {
+        width: 100%;
+    }
+}
+
+/*  button submit
+---------------------------------------------*/
+input[type="button"],
+input[type="submit"] {
+    -webkit-appearance: none;
+    display: inline-block;
+    color: $w;
+    background-color: $c1;
+    border: 0;
+    padding: 0rem 3rem;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: $bdrs1;
+    height: 50px;
+    position: relative;
+    transition: $transition;
+}
+
+/* ======= hover ======= */
+.pc input[type="button"]:hover,
+.pc input[type="submit"]:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

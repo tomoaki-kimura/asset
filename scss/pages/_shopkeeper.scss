@@ -1,0 +1,90 @@
+/*==================================================================
+    #shopkeeper .headline
+===================================================================*/
+#shopkeeper .headline {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    position: relative;
+    em {
+        display: inline-block;
+        font-size: 3.6rem;
+        font-family: $font1;
+        font-weight: 500;
+        margin-right: 0.2em;
+    }
+    &::before {
+        display: block;
+        content: "";
+        width: 40px;
+        height: 1px;
+        background-color: rgba($color: $w, $alpha: 0.4);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+/*==================================================================
+    #shopkeeper .message
+===================================================================*/
+#shopkeeper .message {
+    padding: 140px 0 200px;
+    @include mq() {
+        padding: 0 0 90px;
+    }
+    &_box {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        @include mq() {
+            display: block;
+        }
+    }
+    &_txt {
+        width: 470px;
+        @include mq() {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 1.6rem;
+            line-height: 1.75;
+            letter-spacing: 0.05em;
+            margin-bottom: 2em;
+            &.name {
+                font-size: 2rem;
+                padding-top: 1em;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &_img {
+        width: 460px;
+        @include mq() {
+            width: 100%;
+            text-align: right;
+            img {
+                width: 278px;
+                margin-right: -4vw;
+            }
+        }
+    }
+}
+
+/*==================================================================
+    #shopkeeper .career
+===================================================================*/
+#shopkeeper .career {
+    padding: 180px 0 100px;
+    background-image: url(../img/shopkeeper/career_bg_01.svg);
+    background-repeat: no-repeat;
+    background-position: 3vw 0;
+    background-size: 880px auto;
+    @include mq() {
+        padding: 110px 0 60px;
+        background-size: 315px auto;
+    }
+}

@@ -1,0 +1,49 @@
+/*==================================================================
+    layout
+===================================================================*/
+/*  container
+---------------------------------------------*/
+.container {
+    width: 100%;
+    max-width: 1030px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    @include mq() {
+        max-width: auto;
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+    &.-large {
+        max-width: 1230px;
+        @include mq() {
+            max-width: auto;
+        }
+    }
+    &.-small {
+        max-width: 830px;
+        @include mq() {
+            max-width: auto;
+        }
+    }
+    &.-min {
+        max-width: 690px;
+        @include mq() {
+            max-width: auto;
+        }
+    }
+    &.-fluid {
+        max-width: none;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.container--fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}

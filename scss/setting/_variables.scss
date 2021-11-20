@@ -1,0 +1,119 @@
+//==================================================================
+//	_variables.scss 変数
+//==================================================================
+// -----------------------------------------------
+//  color
+//------------------------------------------------
+//mono
+$k: #111; //black
+$w: #fff; //white
+
+//gray
+$g1: #dddddd; //gray1 -
+$g2: #cccccc; //gray2 -
+$g3: #aaaaaa; //gray3 -
+$g4: #999999; //gray4 -
+$g5: #777777; //gray5 -
+$g6: #666666; //gray6 -
+
+//color
+$c1: #1678bf; //keyColor1 -
+$c2: #66caf2; //keyColor2 -
+$c3: #d8695d; //keyColor3 -
+$c4: #50cc85; //keyColor4 -
+$c5: #b277e0; //keyColor5 -
+$c6: #e0c332; //keyColor6 -
+
+//caution 注意カラー
+$cCaution: #e20c0c;
+
+// -----------------------------------------------
+//  font
+//------------------------------------------------
+//  fontsize
+//--------------------------------
+//PC
+$fzS: 1.2rem !default; //small
+$fz: 1.4rem !default; //regular
+$fzM: 1.6rem !default; //medium
+$fzL: 1.8rem !default; //large
+
+//SP
+$fzS--sp: 1.1rem !default;
+$fz--sp: 1.3rem !default;
+$fzM--sp: 1.5rem !default;
+$fzL--sp: 1.7rem !default;
+
+//  line-height
+//--------------------------------
+//PC
+$lhS: 1.6 !default;
+$lh: 1.8 !default;
+$lhM: 2 !default;
+$lhL: 2.4 !default;
+//SP
+$lhS--sp: 1.3 !default;
+$lh--sp: 1.5 !default;
+$lhM--sp: 1.7 !default;
+$lhL--sp: 1.9 !default;
+
+//  font-family
+//--------------------------------
+$font1: "Cormorant Garamond", serif;
+// $font2: ;
+
+//"Noto Sans", "Noto Sans CJK JP"
+//"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体"
+//"游明朝体", "Yu Mincho", YuMincho
+//'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro'
+//'メイリオ','Meiryo'
+
+// -----------------------------------------------
+//  border-radius
+//------------------------------------------------
+$bdrs1: 4px;
+$bdrs2: 6px;
+
+// -----------------------------------------------
+//  opacity
+//------------------------------------------------
+$opacity: 0.5;
+
+// -----------------------------------------------
+//  box-shadow
+//------------------------------------------------
+$bxs1: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); //通常の影 : 横 縦 ぼかし 広がり カラー
+$bxs2: 0px -6px 0px -2px rgba(0, 0, 0, 0.2) inset; //ボタン立体用
+
+// -----------------------------------------------
+//  text-shadow
+//------------------------------------------------
+$txs1: 0px 0px 12px rgba(0, 0, 0, 0.6); //横 縦 ボケ カラー
+
+// -----------------------------------------------
+//  background-image
+//------------------------------------------------
+$grd1: linear-gradient(135deg, #ffa84c 0%, #ff7b0d 100%); //斜めオレンジ
+
+// -----------------------------------------------
+//  transition  http://easings.net/ja
+//------------------------------------------------
+//基準
+$time: 200ms;
+$transition: all $time ease;
+
+//original
+$ease1: all $time cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+//sine
+$easeInSine: all $time cubic-bezier(0.47, 0, 0.745, 0.715);
+$easeOutSine: all $time cubic-bezier(0.39, 0.575, 0.565, 1);
+$easeInOutSine: all $time cubic-bezier(0.445, 0.05, 0.55, 0.95);
+//cubic
+$easeInCubic: all $time cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$easeOutCubic: all $time cubic-bezier(0.215, 0.61, 0.355, 1);
+$easeInOutCubic: all $time cubic-bezier(0.645, 0.045, 0.355, 1);
+//quart
+$easeInQuart: all $time cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$easeOutQuart: all $time cubic-bezier(0.165, 0.84, 0.44, 1);
+$easeInOutQuart: all $time cubic-bezier(0.77, 0, 0.175, 1);
