@@ -3154,6 +3154,10 @@ input.short, select.short, textarea.short {
     background-image: url(../img/top/lineup_icon_08.png)
 }
 
+#top .lineup_item:nth-child(9) a .icon {
+    background-image: url(../img/top/lineup_icon_09.png)
+}
+
 #top .blocks {
     background-repeat: no-repeat;
     padding-bottom: 310px;
