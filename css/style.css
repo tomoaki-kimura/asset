@@ -3147,15 +3147,11 @@ input.short, select.short, textarea.short {
 }
 
 #top .lineup_item:nth-child(7) a .icon {
-    background-image: url(../img/top/lineup_icon_07.png)
+    background-image: url(../img/top/lineup_icon_09.png)
 }
 
 #top .lineup_item:nth-child(8) a .icon {
     background-image: url(../img/top/lineup_icon_08.png)
-}
-
-#top .lineup_item:nth-child(9) a .icon {
-    background-image: url(../img/top/lineup_icon_09.png)
 }
 
 #top .blocks {
