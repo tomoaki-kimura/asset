@@ -3146,11 +3146,11 @@ input.short, select.short, textarea.short {
     background-image: url(../img/top/lineup_icon_07.png)
 }
 
-#top .lineup_item:nth-child(7) a .icon {
+/* #top .lineup_item:nth-child(7) a .icon {
     background-image: url(../img/top/lineup_icon_09.png)
-}
+} */
 
-#top .lineup_item:nth-child(8) a .icon {
+#top .lineup_item:nth-child(7) a .icon {
     background-image: url(../img/top/lineup_icon_08.png)
 }
 
