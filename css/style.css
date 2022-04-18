@@ -2070,7 +2070,7 @@ input.short, select.short, textarea.short {
     align-items: center
 }
 
-.nav_icon {
+/* .nav_icon {
     margin-right: 20px
 }
 
@@ -2078,7 +2078,7 @@ input.short, select.short, textarea.short {
     .nav_icon {
         margin-right: 25px
     }
-}
+} */
 
 .nav_icon:nth-child(1) img {
     width: 24px
