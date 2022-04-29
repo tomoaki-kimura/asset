@@ -1671,7 +1671,8 @@ input.short, select.short, textarea.short {
 }
 
 .tbl01 {
-    min-width: 210px;
+    /* min-width: 210px; */
+    min-width: 120px;
     border-collapse: collapse;
     font-size: 1.4rem;
     line-height: 1.6;
@@ -1681,7 +1682,8 @@ input.short, select.short, textarea.short {
 
 @media screen and (max-width: 960px) {
     .tbl01 {
-        min-width: 215px
+        /* min-width: 215px; */
+        min-width: 100px;
     }
 }
 
