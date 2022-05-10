@@ -2082,6 +2082,16 @@ input.short, select.short, textarea.short {
     }
 } */
 
+.nav_icon {
+    margin: 0 10px
+}
+
+@media screen and (max-width: 960px) {
+    .nav_icon {
+        margin: 0 15px
+    }
+}
+
 .nav_icon:nth-child(1) img {
     width: 24px
 }
