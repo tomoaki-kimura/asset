@@ -2093,12 +2093,12 @@ input.short, select.short, textarea.short {
 }
 
 .nav_icon:nth-child(2) img {
-    width: 20px
+    width: 24px
 }
 
 @media screen and (max-width: 960px) {
     .nav_icon:nth-child(2) img {
-        width: 25px
+        width: 31px
     }
 }
 
